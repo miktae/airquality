@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+.App-header{
+    font-family: 'Markazi Text', serif;
+    margin: 2%!important;
+    font-size: 3rem!important;
+    font-weight: 600!important;
+}
+.datas{
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+    background-color: rgb(255, 255, 190);
+    opacity: 0.7;
+}
+.title-1{
+    font-size: 1.7em;
+    padding: 2%;
+    margin-left: 10%;
+}
+.title-2{
+    background-color: orange;
+    padding: 8%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+}
+.item-row{
+    font-weight: 600;
+    color: blue;
+}
+.maxmin{
+    text-align: right!important;
+}
