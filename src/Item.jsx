@@ -1,8 +1,9 @@
 import React from 'react'
 
 function Item(props) {
-    const datas= ["AQI", "CO", "Humd",
-     "NO2", "O3", "Pm10", "Pm25", "SO2", "Temp"]
+    const datas= ["Temp","Humd","Pm25","Pm10",
+     "CO(µg/ m³)","NO2(µg/ m³)",
+     "SO2(µg/ m³)", "AQI(µg/ m³)","O3(µg/ m³)"]
 
     return (
         <div className="d-flex flex-column datas">
@@ -28,13 +29,13 @@ function Item(props) {
                         datas.map((data, index) => (
                             <tr key={index} className="item-row">
                                 { data === "Temp" ? 
-                                <td> Nhiệt độ </td> :
+                                <td> Nhiệt độ (℃)</td> :
                                 data === "Humd" ?
-                                <td> Độ ẩm </td> :
+                                <td> Độ ẩm (%)</td> :
                                 data === "Pm25" ?
-                                <td> PM 2.5 </td> :
+                                <td> PM 2.5 (µg/ m³)</td> :
                                 data === "Pm10" ?
-                                <td> PM 1.0 </td> :
+                                <td> PM 1.0 (µg/ m³)</td> :
                                 <td> {data} </td>
                                 }
                                 <td>{props[data]}</td>
