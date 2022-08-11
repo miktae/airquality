@@ -17,8 +17,8 @@ function Item(props) {
             <table className="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
+                        <th>Tiêu chí</th>
+                        <th>Hiện tại</th>
                         <th>Min</th>
                         <th>Max</th>
                     </tr>
@@ -38,9 +38,10 @@ function Item(props) {
                                 <td> {data} </td>
                                 }
                                 <td>{props[data]}</td>
-                                <td>{Math.floor(Math.random() * (10 - 1) ) + 1}</td>
+                                <td>{Math.floor(Math.random() * (100 - 10) ) + 20}</td>
                                 <td style= {{ color: 'red' }}>
-                                    {Math.floor(Math.random() * (100 - 10) ) + 10}
+                                    {Math.floor(Math.random() * (10000 - 8000) )
+                                     + 8000}
                                 </td>
                             </tr>
                         ))

@@ -37,15 +37,13 @@ function App() {
     
   return (
     <div className="App d-flex flex-column align-items-center">
-      <header className="App-header">
-        <a href="/" onClick={
+      <header className="App-header" onClick={
           (e) => {
             e.preventDefault()
             alert("This is a personal website of M.T")
           }
         }>
           Quan trắc chất lượng không khí
-        </a>
       </header>
       <div className="d-flex justify-content-around w-100 flex-wrap">
         {
