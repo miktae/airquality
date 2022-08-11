@@ -36,6 +36,8 @@ function Item(props) {
                                 <td> PM 2.5 (µg/ m³)</td> :
                                 data === "Pm10" ?
                                 <td> PM 1.0 (µg/ m³)</td> :
+                                data === "AQI" ?
+                                <td> {data} </td> :
                                 <td> {data} (µg/ m³)</td>
                                 }
                                 <td>{props[data]}</td>
