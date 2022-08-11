@@ -1,9 +1,9 @@
 import React from 'react'
 
 function Item(props) {
-    const datas= ["Temp","Humd","Pm25","Pm10",
+    const datas= ["AQI","Temp","Humd","Pm25","Pm10",
      "CO","NO2", "SO2",
-      "AQI","O3"]
+      "O3"]
 
     return (
         <div className="d-flex flex-column datas">
