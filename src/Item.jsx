@@ -2,8 +2,8 @@ import React from 'react'
 
 function Item(props) {
     const datas= ["Temp","Humd","Pm25","Pm10",
-     "CO(µg/ m³)","NO2(µg/ m³)",
-     "SO2(µg/ m³)", "AQI(µg/ m³)","O3(µg/ m³)"]
+     "CO","NO2", "SO2",
+      "AQI","O3"]
 
     return (
         <div className="d-flex flex-column datas">
@@ -36,7 +36,7 @@ function Item(props) {
                                 <td> PM 2.5 (µg/ m³)</td> :
                                 data === "Pm10" ?
                                 <td> PM 1.0 (µg/ m³)</td> :
-                                <td> {data} </td>
+                                <td> {data} (µg/ m³)</td>
                                 }
                                 <td>{props[data]}</td>
                                 <td>{Math.floor(Math.random() * (100 - 10) ) + 20}</td>
